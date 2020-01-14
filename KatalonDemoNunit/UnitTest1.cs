@@ -16,7 +16,7 @@ namespace KatalonDemoNunit
             IWebDriver driver = new ChromeDriver();
 
 
-            driver.Navigate().GoToUrl("http://apps.supernet.bo/ic/Autentication.aspx");
+            driver.Navigate().GoToUrl("http://apps.supernet.bo/ic/Autenticationwwwww.aspx");
             Thread.Sleep(500);
             driver.FindElement(By.Id("IFMainContent_txtLogin")).Click();
             driver.FindElement(By.Id("IFMainContent_txtLogin")).Clear();
