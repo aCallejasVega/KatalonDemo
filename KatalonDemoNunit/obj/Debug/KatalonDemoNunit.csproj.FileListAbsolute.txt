@@ -15,7 +15,6 @@ D:\03.PROYECTOS\KatalonGit\KatalonDemoNunit\KatalonDemoNunit\bin\Debug\Microsoft
 D:\03.PROYECTOS\KatalonGit\KatalonDemoNunit\KatalonDemoNunit\bin\Debug\nunit.framework.pdb
 D:\03.PROYECTOS\KatalonGit\KatalonDemoNunit\KatalonDemoNunit\bin\Debug\nunit.framework.xml
 D:\03.PROYECTOS\KatalonGit\KatalonDemoNunit\KatalonDemoNunit\bin\Debug\WebDriver.xml
-D:\03.PROYECTOS\KatalonGit\KatalonDemoNunit\KatalonDemoNunit\obj\Debug\KatalonDemoNunit.csprojAssemblyReference.cache
 D:\03.PROYECTOS\KatalonGit\KatalonDemoNunit\KatalonDemoNunit\obj\Debug\KatalonDemoNunit.csproj.CoreCompileInputs.cache
 D:\03.PROYECTOS\KatalonGit\KatalonDemoNunit\KatalonDemoNunit\obj\Debug\KatalonDemoNunit.csproj.CopyComplete
 D:\03.PROYECTOS\KatalonGit\KatalonDemoNunit\KatalonDemoNunit\obj\Debug\KatalonDemoNunit.dll

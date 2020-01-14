@@ -10,13 +10,13 @@ namespace KatalonDemoNunit
     [TestClass]
     public class UnitTest1
     {
-        [TestMethod]
+        [TestCategory("Buid"),TestMethod]
         public void TestMethod1()
         {
             IWebDriver driver = new ChromeDriver();
 
 
-            driver.Navigate().GoToUrl("http://apps.supernet.bo/ic/Autenticationwwwww.aspx");
+            driver.Navigate().GoToUrl("http://apps.supernet.bo/ic/Autentication.aspx");
             Thread.Sleep(500);
             driver.FindElement(By.Id("IFMainContent_txtLogin")).Click();
             driver.FindElement(By.Id("IFMainContent_txtLogin")).Clear();
