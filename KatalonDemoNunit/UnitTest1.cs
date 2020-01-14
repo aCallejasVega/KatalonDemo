@@ -13,7 +13,7 @@ namespace KatalonDemoNunit
         [TestMethod]
         public void TestMethod1()
         {
-            IWebDriver driver = new ChromeDriver(@"D:\03.PROYECTOS\01.BNBPUNTOS\PROYECTO REST\DesarrolloBNB");
+            IWebDriver driver = new ChromeDriver();
 
 
             driver.Navigate().GoToUrl("http://apps.supernet.bo/ic/Autentication.aspx");
