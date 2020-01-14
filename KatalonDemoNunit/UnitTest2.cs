@@ -1,19 +1,17 @@
-﻿using NUnit.Framework;
-using System.Threading;
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using System.Threading;
 namespace KatalonDemoNunit
 {
- 
-    public class UnitTest1
+    [TestClass]
+    public class UnitTest2
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-        [Test]
+        [TestMethod]
         public void TestMethod1()
         {
+
             IWebDriver driver = new ChromeDriver();
 
 
@@ -29,7 +27,6 @@ namespace KatalonDemoNunit
             Thread.Sleep(1000);
 
             driver.Close();
-
         }
     }
 }
