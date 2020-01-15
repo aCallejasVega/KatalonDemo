@@ -2,6 +2,9 @@
 using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using System.IO;
+using System;
+
 namespace KatalonDemoNunit
 {
  
@@ -28,48 +31,61 @@ namespace KatalonDemoNunit
             driver.FindElement(By.Id("IFMainContent_btnEntrar")).Click();
             Thread.Sleep(1000);*/
 
-            driver.Navigate().GoToUrl("http://10.16.22.88/BNBNet/IniciarSesion/IniciarIdentificador");
-            driver.FindElement(By.XPath("(.//*[normalize-space(text()) and normalize-space(.)='UFV:'])[1]/following::div[1]")).Click();
-            driver.FindElement(By.Id("IdentificadorEncriptado")).Click();
-            driver.FindElement(By.Id("IdentificadorEncriptado")).Clear();
-            driver.FindElement(By.Id("IdentificadorEncriptado")).SendKeys("clientecard");
-            driver.FindElement(By.Id("RespuestaCapchaEncriptado")).Click();
-            driver.FindElement(By.Id("RespuestaCapchaEncriptado")).Clear();
-            driver.FindElement(By.Id("RespuestaCapchaEncriptado")).SendKeys("abcd");
-            driver.FindElement(By.Id("submitEnviar")).Click();
-            driver.FindElement(By.Id("Clave")).Clear();
-            driver.FindElement(By.Id("Clave")).SendKeys("Abc123");
-            driver.FindElement(By.Id("submitEnviar")).Click();
-            driver.FindElement(By.LinkText("Operaciones")).Click();
-            driver.FindElement(By.LinkText("Transferencias")).Click();
-            driver.FindElement(By.XPath("(.//*[normalize-space(text()) and normalize-space(.)='Transferencias'])[2]/following::button[1]")).Click();
-            driver.FindElement(By.Id("ProductoOrigenSeleccionado")).Click();
-            driver.FindElement(By.Id("ProductoOrigenSeleccionado")).Click();
-            driver.FindElement(By.Id("ProductoDestinoSeleccionado")).Click();
-            driver.FindElement(By.Id("ProductoDestinoSeleccionado")).Click();
-            driver.FindElement(By.Id("MonedaSeleccionada")).Click();
-            driver.FindElement(By.Id("MonedaSeleccionada")).Click();
-            driver.FindElement(By.Id("Monto")).Click();
-            driver.FindElement(By.Id("Monto")).Clear();
-            driver.FindElement(By.Id("Monto")).SendKeys("10");
-            driver.FindElement(By.Id("CodigoPromocion")).Click();
-            driver.FindElement(By.Id("CodigoPromocion")).Clear();
-            driver.FindElement(By.Id("CodigoPromocion")).SendKeys("abcd");
-            driver.FindElement(By.XPath("(.//*[normalize-space(text()) and normalize-space(.)='Los campos marcados con (*) son obligatorios.'])[1]/following::tbody[1]")).Click();
-            driver.FindElement(By.Id("CodigoPromocion")).Click();
-            driver.FindElement(By.Id("CodigoPromocion")).Clear();
-            driver.FindElement(By.Id("CodigoPromocion")).SendKeys("");
-            driver.FindElement(By.Id("Referencia")).Click();
-            driver.FindElement(By.Id("Referencia")).Clear();
-            driver.FindElement(By.Id("Referencia")).SendKeys("pago");
-            driver.FindElement(By.Id("submitTransferir")).Click();
-            driver.FindElement(By.XPath("(.//*[normalize-space(text()) and normalize-space(.)='Transferencias BNB propias > A cuentas propias'])[1]/following::h1[1]")).Click();
+            string[] datos = File.ReadAllLines(@"D:\dataSetWeb.csv");
+            foreach (var d in datos)
+            {
+                var valores = d.Split(',');
+
+                string usuario = valores[0];
+                string password = valores[1];
+                string cuentaDebito = valores[2];
+                string cuentaAbono = valores[3];
+                string montoTranferencia = valores[4];
+                string referencia = valores[5];
 
 
+                driver.Navigate().GoToUrl("http://10.16.22.88/BNBNet/IniciarSesion/IniciarIdentificador");
+                driver.FindElement(By.XPath("(.//*[normalize-space(text()) and normalize-space(.)='UFV:'])[1]/following::div[1]")).Click();
+                driver.FindElement(By.Id("IdentificadorEncriptado")).Click();
+                driver.FindElement(By.Id("IdentificadorEncriptado")).Clear();
+                driver.FindElement(By.Id("IdentificadorEncriptado")).SendKeys(usuario);
+                driver.FindElement(By.Id("RespuestaCapchaEncriptado")).Click();
+                driver.FindElement(By.Id("RespuestaCapchaEncriptado")).Clear();
+                driver.FindElement(By.Id("RespuestaCapchaEncriptado")).SendKeys("abcd");
+                driver.FindElement(By.Id("submitEnviar")).Click();
+                driver.FindElement(By.Id("Clave")).Clear();
+                driver.FindElement(By.Id("Clave")).SendKeys(password);
+                driver.FindElement(By.Id("submitEnviar")).Click();
+                driver.FindElement(By.LinkText("Operaciones")).Click();
+                driver.FindElement(By.LinkText("Transferencias")).Click();
+                driver.FindElement(By.XPath("(.//*[normalize-space(text()) and normalize-space(.)='Transferencias'])[2]/following::button[1]")).Click();
+                driver.FindElement(By.Id("ProductoOrigenSeleccionado")).Click();
+                driver.FindElement(By.Id("ProductoOrigenSeleccionado")).Click();
+                driver.FindElement(By.Id("ProductoDestinoSeleccionado")).Click();
+                driver.FindElement(By.Id("ProductoDestinoSeleccionado")).Click();
+                driver.FindElement(By.Id("MonedaSeleccionada")).Click();
+                driver.FindElement(By.Id("MonedaSeleccionada")).Click();
+                driver.FindElement(By.Id("Monto")).Click();
+                driver.FindElement(By.Id("Monto")).Clear();
+                driver.FindElement(By.Id("Monto")).SendKeys("10");
+                driver.FindElement(By.Id("CodigoPromocion")).Click();
+                driver.FindElement(By.Id("CodigoPromocion")).Clear();
+                driver.FindElement(By.Id("CodigoPromocion")).SendKeys("abcd");
+                driver.FindElement(By.XPath("(.//*[normalize-space(text()) and normalize-space(.)='Los campos marcados con (*) son obligatorios.'])[1]/following::tbody[1]")).Click();
+                driver.FindElement(By.Id("CodigoPromocion")).Click();
+                driver.FindElement(By.Id("CodigoPromocion")).Clear();
+                driver.FindElement(By.Id("CodigoPromocion")).SendKeys("");
+                driver.FindElement(By.Id("Referencia")).Click();
+                driver.FindElement(By.Id("Referencia")).Clear();
+                driver.FindElement(By.Id("Referencia")).SendKeys("pago");
+                driver.FindElement(By.Id("submitTransferir")).Click();
+                driver.FindElement(By.XPath("(.//*[normalize-space(text()) and normalize-space(.)='Transferencias BNB propias > A cuentas propias'])[1]/following::h1[1]")).Click();
+                driver.Close();
 
 
+            }
 
-            driver.Close();
+           
 
         }
     }
