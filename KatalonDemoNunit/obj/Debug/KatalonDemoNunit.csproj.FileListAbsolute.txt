@@ -20,3 +20,24 @@ D:\03.PROYECTOS\KatalonGit\KatalonDemoNunit\KatalonDemoNunit\obj\Debug\KatalonDe
 D:\03.PROYECTOS\KatalonGit\KatalonDemoNunit\KatalonDemoNunit\obj\Debug\KatalonDemoNunit.csproj.CopyComplete
 D:\03.PROYECTOS\KatalonGit\KatalonDemoNunit\KatalonDemoNunit\obj\Debug\KatalonDemoNunit.dll
 D:\03.PROYECTOS\KatalonGit\KatalonDemoNunit\KatalonDemoNunit\obj\Debug\KatalonDemoNunit.pdb
+D:\03.PROYECTOS\GIT PROYECTOS\KATALONDEMO\KatalonDemo\KatalonDemoNunit\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\03.PROYECTOS\GIT PROYECTOS\KATALONDEMO\KatalonDemo\KatalonDemoNunit\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\03.PROYECTOS\GIT PROYECTOS\KATALONDEMO\KatalonDemo\KatalonDemoNunit\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\03.PROYECTOS\GIT PROYECTOS\KATALONDEMO\KatalonDemo\KatalonDemoNunit\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+D:\03.PROYECTOS\GIT PROYECTOS\KATALONDEMO\KatalonDemo\KatalonDemoNunit\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+D:\03.PROYECTOS\GIT PROYECTOS\KATALONDEMO\KatalonDemo\KatalonDemoNunit\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\03.PROYECTOS\GIT PROYECTOS\KATALONDEMO\KatalonDemo\KatalonDemoNunit\bin\Debug\KatalonDemoNunit.dll
+D:\03.PROYECTOS\GIT PROYECTOS\KATALONDEMO\KatalonDemo\KatalonDemoNunit\bin\Debug\KatalonDemoNunit.pdb
+D:\03.PROYECTOS\GIT PROYECTOS\KATALONDEMO\KatalonDemo\KatalonDemoNunit\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\03.PROYECTOS\GIT PROYECTOS\KATALONDEMO\KatalonDemo\KatalonDemoNunit\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\03.PROYECTOS\GIT PROYECTOS\KATALONDEMO\KatalonDemo\KatalonDemoNunit\bin\Debug\nunit.framework.dll
+D:\03.PROYECTOS\GIT PROYECTOS\KATALONDEMO\KatalonDemo\KatalonDemoNunit\bin\Debug\WebDriver.dll
+D:\03.PROYECTOS\GIT PROYECTOS\KATALONDEMO\KatalonDemo\KatalonDemoNunit\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\03.PROYECTOS\GIT PROYECTOS\KATALONDEMO\KatalonDemo\KatalonDemoNunit\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\03.PROYECTOS\GIT PROYECTOS\KATALONDEMO\KatalonDemo\KatalonDemoNunit\bin\Debug\nunit.framework.pdb
+D:\03.PROYECTOS\GIT PROYECTOS\KATALONDEMO\KatalonDemo\KatalonDemoNunit\bin\Debug\nunit.framework.xml
+D:\03.PROYECTOS\GIT PROYECTOS\KATALONDEMO\KatalonDemo\KatalonDemoNunit\bin\Debug\WebDriver.xml
+D:\03.PROYECTOS\GIT PROYECTOS\KATALONDEMO\KatalonDemo\KatalonDemoNunit\obj\Debug\KatalonDemoNunit.csproj.CoreCompileInputs.cache
+D:\03.PROYECTOS\GIT PROYECTOS\KATALONDEMO\KatalonDemo\KatalonDemoNunit\obj\Debug\KatalonDemoNunit.csproj.CopyComplete
+D:\03.PROYECTOS\GIT PROYECTOS\KATALONDEMO\KatalonDemo\KatalonDemoNunit\obj\Debug\KatalonDemoNunit.dll
+D:\03.PROYECTOS\GIT PROYECTOS\KATALONDEMO\KatalonDemo\KatalonDemoNunit\obj\Debug\KatalonDemoNunit.pdb
