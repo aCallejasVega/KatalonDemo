@@ -52,6 +52,7 @@ namespace KatalonDemoNunit
 
                     IWebDriver driver = new ChromeDriver();
                     driver.Navigate().GoToUrl("http://10.16.22.88/BNBNet/IniciarSesion/IniciarIdentificador");
+                    Thread.Sleep(100);
                     driver.FindElement(By.XPath("(.//*[normalize-space(text()) and normalize-space(.)='UFV:'])[1]/following::div[1]")).Click();
                     driver.FindElement(By.Id("IdentificadorEncriptado")).Click();
                     driver.FindElement(By.Id("IdentificadorEncriptado")).Clear();
@@ -59,10 +60,13 @@ namespace KatalonDemoNunit
                     driver.FindElement(By.Id("RespuestaCapchaEncriptado")).Click();
                     driver.FindElement(By.Id("RespuestaCapchaEncriptado")).Clear();
                     driver.FindElement(By.Id("RespuestaCapchaEncriptado")).SendKeys("abcd");// este es el codigo captchap se debe deshabilitar.
+                    Thread.Sleep(200);
                     driver.FindElement(By.Id("submitEnviar")).Click();
+                    Thread.Sleep(100);
                     driver.FindElement(By.Id("Clave")).Clear();
                     driver.FindElement(By.Id("Clave")).SendKeys(password); //ingresamos el password
                     driver.FindElement(By.Id("submitEnviar")).Click();
+                    Thread.Sleep(300);
                     driver.FindElement(By.LinkText("Operaciones")).Click();
                     driver.FindElement(By.LinkText("Transferencias")).Click();
                     driver.FindElement(By.XPath("(.//*[normalize-space(text()) and normalize-space(.)='Transferencias'])[2]/following::button[1]")).Click();
