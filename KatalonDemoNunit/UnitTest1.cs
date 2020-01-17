@@ -63,7 +63,7 @@ namespace KatalonDemoNunit
                     Thread.Sleep(200);
                     driver.FindElement(By.Id("submitEnviar")).Click();
                     Thread.Sleep(100);
-                    driver.FindElement(By.Id("Clave")).Clear();
+                    //driver.FindElement(By.Id("Clave")).Clear();
                     driver.FindElement(By.Id("Clave")).SendKeys(password); //ingresamos el password
                     driver.FindElement(By.Id("submitEnviar")).Click();
                     Thread.Sleep(300);
