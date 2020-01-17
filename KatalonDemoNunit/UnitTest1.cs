@@ -47,6 +47,8 @@ namespace KatalonDemoNunit
 
                 if (c > 0)
                 {
+                    Console.Write(usuario + "************** " + c );
+                    Console.Write("---------------------------------------------------------------------");
 
                     IWebDriver driver = new ChromeDriver();
                     driver.Navigate().GoToUrl("http://10.16.22.88/BNBNet/IniciarSesion/IniciarIdentificador");
